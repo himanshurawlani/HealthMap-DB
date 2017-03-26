@@ -6,3 +6,13 @@ Begin
 	from user_tables; 
 end;
 /
+
+/*
+
+ddl
+create table username.table_name(
+);
+
+dml
+select * from table_name@link_name;
+*/
