@@ -24,3 +24,7 @@ begin
 	from dual;
 end;
 /
+
+/* Dropping a sequence */
+select sequence_name from user_sequences;
+drop sequence sequence_name;
