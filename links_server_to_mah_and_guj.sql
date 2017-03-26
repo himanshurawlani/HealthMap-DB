@@ -1,10 +1,12 @@
-/* Link from Server (Healthmap_DB) to maharashtra */
+/* Link from Server (Healthmap_DB) to maharashtra 
+ * Create in Healthmap_DB user
+ */
 create public database link link_to_maharashtra 
-connect to maharashtra identified by maharashtra using 'Oracle_1';
+connect to maharashtra identified by Oracle_1 using 'XE';
 
 /* Link from Server (Healthmap_DB) to gujrat */
 create public database link link_to_gujrat 
-connect to gujrat identified by gujrat using 'Oracle_1';
+connect to gujrat identified by Oracle_1 using 'XE';
 
 /* Trigger to distribute the data insered in Healthmap_DB to respective DDB */
 CREATE OR REPLACE TRIGGER distributer
@@ -12,10 +14,10 @@ AFTER INSERT ON alerts
 FOR EACH ROW
 BEGIN
 	if :new.state_name='gujrat' then
-		insert into gujrat.alert_gujrat@link_to_gujrat
+		insert into alert_gujrat@link_to_gujrat
 		values (:new.message_id,:new.priority,:new.message);
 	else
-		insert into maharashtra.alert_maharashtra@link_to_maharashtra
+		insert into alert_maharashtra@link_to_maharashtra
 		values (:new.message_id,:new.priority,:new.message);
 	end if;
 END;
