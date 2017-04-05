@@ -2,11 +2,11 @@
  * Create in Healthmap_DB user
  */
 create public database link link_to_maharashtra 
-connect to maharashtra identified by Oracle_1 using 'XE';
+connect to maharashtra identified by main using 'XE';
 
 /* Link from Server (Healthmap_DB) to gujrat */
 create public database link link_to_gujrat 
-connect to gujrat identified by Oracle_1 using 'XE';
+connect to gujrat identified by main using 'XE';
 
 /* Trigger to distribute the data insered in Healthmap_DB to respective DDB */
 CREATE OR REPLACE TRIGGER distributer
