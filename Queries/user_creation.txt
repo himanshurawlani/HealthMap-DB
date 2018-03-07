@@ -1,0 +1,19 @@
+to create users:-
+
+create user himanshu identified by abc;
+create user jayesh identified by abc;
+create user vignesh identified by abc;
+
+
+GRANT CONNECT, RESOURCE, DBA TO himanshu;
+GRANT CONNECT, RESOURCE, DBA TO jayesh;
+GRANT CONNECT, RESOURCE, DBA TO vignesh;
+
+
+grant create session to himanshu;
+grant create session to jayesh;
+grant create session to vignesh;
+
+grant unlimited tablespace to himanshu;
+grant unlimited tablespace to jayesh;
+grant unlimited tablespace to vignesh;

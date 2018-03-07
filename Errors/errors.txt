@@ -1,0 +1,5 @@
+Xampp port conflict
+http://stackoverflow.com/questions/11294812/how-to-change-xampp-apache-server-port
+
+Php oci_connect() failure
+http://stackoverflow.com/a/39770392/7169491
