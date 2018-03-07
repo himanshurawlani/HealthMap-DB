@@ -16,7 +16,7 @@ The HealthMap System is designed for the government officials for monitoring the
 ### Back End :
 1. Oracle Database 11g has ben used for database and is integrated in the web pages using PHP 5.6.
 2. Instant client has been used to provide defination for the oci based functions.
-3. XAMPP is used for hosting the server.
+3. XAMPP is used as the server.
 
 Screenshots :
 ![image](https://user-images.githubusercontent.com/16475754/37103259-cc83dc0e-224f-11e8-923a-2cd521548912.png)
