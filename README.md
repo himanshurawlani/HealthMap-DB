@@ -18,3 +18,7 @@ The HealthMap System is designed for the government officials for monitoring the
 2. Instant client has been used to provide defination for the oci based functions.
 3. XAMPP is used for hosting the server.
 Screenshots :
+![image](https://user-images.githubusercontent.com/16475754/37103259-cc83dc0e-224f-11e8-923a-2cd521548912.png)
+![image](https://user-images.githubusercontent.com/16475754/37103300-e6e566a8-224f-11e8-8b75-67988204f65d.png)
+![image](https://user-images.githubusercontent.com/16475754/37103315-ee0452e6-224f-11e8-99a8-4601506f18e0.png)
+![image](https://user-images.githubusercontent.com/16475754/37103321-f2b4ef12-224f-11e8-996c-2cf5d7304a6c.png)
